@@ -1,4 +1,3 @@
-
 function getAverage(points: number[]): number {
   if (points.length === 0) {
     return 0; // 空配列なら0を返す

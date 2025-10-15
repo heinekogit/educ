@@ -10,3 +10,16 @@ console.log(filterLongWords(["hello", "hi", "typescript", "cat"]));
 
 console.log(filterLongWords(["dog", "banana", "apple", "js"]));
 // ["BANANA", "APPLE"]
+
+
+// 冗長・中間変数を使うが、論理的に書くなら、===================================
+
+const newWords = words
+  .map(w => w.toUpperCase())
+  .filter(w => w.length >= 5);
+
+return newWords;
+      // こういう書き方もあり
+      // ただし、あまり中間変数を増やしすぎると、かえって読みにくくなることもあるので注意
+
+
