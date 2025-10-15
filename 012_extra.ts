@@ -42,3 +42,24 @@ console.log(fruitMap);
 // 結果　{ apple: 100, banana: 80, orange: 120 }
 
 
+// 別パターン：数値をまとめる   ===================================
+
+const items = [
+  { category: "fruit", price: 100 },
+  { category: "fruit", price: 80 },
+  { category: "drink", price: 120 },
+];
+
+const totals = items.reduce((acc, cur) => {
+  // categoryがまだなければ初期化
+  if (!acc[cur.category]) {
+    acc[cur.category] = 0;
+  }
+  acc[cur.category] += cur.price;
+  return acc;
+}, {});
+
+console.log(totals);
+
+// 結果　{ fruit: 180, drink: 120 }
+
