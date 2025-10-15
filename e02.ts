@@ -13,6 +13,7 @@ console.log(getEvenNumbers([1, 2, 3, 4, 5])); // [2, 4]
 console.log(getEvenNumbers([10, 11, 12]));    // [10, 12]
 
 
+
 // リテラル・テンプレートによる書き換え例 ===================================
 
 function getEvenNumbers(numbers: number[]): number[] {
